@@ -1,0 +1,46 @@
+/* TESTIMONIALS */
+.testimonials-section{background:#0f0f0f;padding:120px 0;color:#fff}
+.testimonials-slider{position:relative;height:400px;overflow:hidden;border-radius:24px}
+.testimonial-card{position:absolute;inset:0;background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:1px solid rgba(76,201,240,0.3);padding:60px;border-radius:24px;opacity:0;transform:scale(0.9);transition:all 0.8s cubic-bezier(0.25,0.8,0.25,1)}
+.testimonial-card.active{opacity:1;transform:scale(1);z-index:2}
+.quote-icon{font-size:8rem;opacity:0.1;position:absolute;top:-20px;left:-20px}
+.testimonial-text{font-size:1.5rem;line-height:1.8;margin-bottom:40px}
+.client-info{display:flex;align-items:center;gap:20px}
+.avatar{width:70px;height:70px;background:var(--primary);border-radius:50%;display:grid;place-items:center;font-size:2rem;font-weight:800}
+.dots{text-align:center;margin-top:40px}
+.dot{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,0.3);display:inline-block;margin:0 8px;cursor:pointer;transition:0.4s}
+.dot.active{background:var(--second-primary);transform:scale(1.4)}
+
+/* PORTFOLIO */
+.portfolio-section{padding:120px 0;background:#f8f9fa}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.portfolio-item{position:relative;overflow:hidden;border-radius:20px;cursor:pointer;aspect-ratio:1/1.2}
+.placeholder-img{background:#ddd;display:grid;place-items:center;font-size:4rem;color:#999}
+.portfolio-overlay{position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,0.9));display:flex;flex-direction:column;justify-content:end;padding:40px;color:#fff;transform:translateY(100%);transition:0.6s}
+.portfolio-item:hover .portfolio-overlay{transform:translateY(0)}
+
+/* TEAM */
+.team-section{background:#0a0a0a;padding:120px 0;color:#fff}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px}
+.team-card{text-align:center;transition:0.6s}
+.team-img{width:180px;height:180px;background:var(--primary);border-radius:50%;margin:0 auto 30px;display:grid;place-items:center;font-size:5rem;color:#fff;box-shadow:0 20px 40px rgba(35,158,250,0.3)}
+.team-card:hover{transform:translateY(-20px)}
+.social-links{margin-top:20px}
+.social-links span{display:inline-block;width:40px;height:40px;background:rgba(255,255,255,0.1);border-radius:50%;margin:0 8px;line-height:40px}
+
+/* CONTACT */
+.contact-section{background:#f8f9fa;padding:120px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.contact-form{display:flex;flex-direction:column;gap:20px}
+.contact-form input,.contact-form textarea{padding:20px;border-radius:12px;border:none;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,0.05);font-size:1.1rem}
+.contact-form textarea{height:180px;resize:none}
+.map-placeholder{height:500px;background:#ddd;border-radius:20px;display:grid;place-items:center;font-size:2rem;color:#999}
+
+/* FOOTER */
+.footer{background:#000;color:#fff;padding:100px 0 40px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
+.footer-brand h3{font-size:2.5rem;margin-bottom:20px;background:linear-gradient(var(--second-primary),var(--white));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.footer-links a,.footer-social a{display:block;margin:12px 0;color:rgba(255,255,255,0.7);transition:0.3s}
+.footer-links a:hover,.social-icons span:hover{color:var(--second-primary);transform:translateX(5px)}
+.social-icons span{display:inline-block;width:50px;height:50px;background:var(--primary);border-radius:50%;margin-right:15px;line-height:50px;text-align:center}
+.footer-bottom{text-align:center;padding-top:60px;border-top:1px solid rgba(255,255,255,0.1);margin-top:60px;color:rgba(255,255,255,0.5)}
