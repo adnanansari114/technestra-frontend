@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Brain, Zap, Eye, Bot, Lightbulb, ArrowRight, ChevronDown } from "lucide-react";
-import '../../styles/service.css';
+import '../../styles/Service.css';
 
 export default function ArtificialIntelligence() {
   const [openFAQ, setOpenFAQ] = useState(null);
