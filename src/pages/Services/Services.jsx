@@ -5,12 +5,12 @@ import '../../styles/Service.css';
 
 export default function Services() {
     const services = [
-        { icon: Brain, title: "Artificial Intelligence", desc: "Drive smarter decisions and intelligent automation with AI solutions tailored to your business needs.", points: ["Machine Learning | Predictive Analytics", "Chatbots | NLP"], link: "/services/artificial-intelligence" },
-        { icon: Database, title: "Data Engineering", desc: "Unlock the true power of your data with modern pipelines, data lakes, and real-time analytics infrastructure.", points: ["ETL Pipelines | Data Lakes | Big Data"], link: "/services/data-engineering" },
-        { icon: Cloud, title: "Cloud Engineering & DevOps", desc: "Scalable, secure, and automated cloud infrastructure with CI/CD, Kubernetes, and Infrastructure as Code.", points: ["AWS | Azure | Docker | Terraform"], link: "/services/cloud-devops" },
-        { icon: Globe, title: "Web & App Development", desc: "Fast, secure, and user-centric web and mobile applications built with modern frameworks.", points: ["React | Next.js | React Native | PWA"], link: "/services/web-app-development" },
-        { icon: Users, title: "Staff Augmentation", desc: "Scale your team instantly with pre-vetted senior developers, designers, and cloud experts.", points: ["On-demand Talent | Fast Onboarding | Flexible Terms"], link: "/services/staff-augmentation" },
-        { icon: Wrench, title: "Maintenance & Support", desc: "24/7 monitoring, bug fixes, performance optimization, and SLA-backed technical support.", points: ["Proactive Monitoring | Security Updates | Performance Tuning"], link: "/services/maintenance-support" }
+        { icon: Brain, title: "Artificial Intelligence", desc: "Drive smarter decisions and intelligent automation with AI solutions tailored to your business needs.", points: ["Machine Learning | Predictive Analytics", "Chatbots | NLP"], link: "/artifiacialintelligence" },
+        { icon: Database, title: "Data Engineering", desc: "Unlock the true power of your data with modern pipelines, data lakes, and real-time analytics infrastructure.", points: ["ETL Pipelines | Data Lakes | Big Data"], link: "/dataengineering" },
+        { icon: Cloud, title: "Cloud Engineering & DevOps", desc: "Scalable, secure, and automated cloud infrastructure with CI/CD, Kubernetes, and Infrastructure as Code.", points: ["AWS | Azure | Docker | Terraform"], link: "/clouddevops" },
+        { icon: Globe, title: "Web & App Development", desc: "Fast, secure, and user-centric web and mobile applications built with modern frameworks.", points: ["React | Next.js | React Native | PWA"], link: "/webappdevelopment" },
+        { icon: Users, title: "Staff Augmentation", desc: "Scale your team instantly with pre-vetted senior developers, designers, and cloud experts.", points: ["On-demand Talent | Fast Onboarding | Flexible Terms"], link: "/staff-augmentation" },
+        { icon: Wrench, title: "Maintenance & Support", desc: "24/7 monitoring, bug fixes, performance optimization, and SLA-backed technical support.", points: ["Proactive Monitoring | Security Updates | Performance Tuning"], link: "/maintenanceSupport" }
     ];
 
     return (

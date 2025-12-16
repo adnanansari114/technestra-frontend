@@ -2,6 +2,7 @@ import React from 'react'
 import HeroBanner from '../components/HomeComponent/HeroBanner';
 import ServicesSection from '../components/HomeComponent/ServicesSection';
 import LogoSlider from '../components/HomeComponent/LogoSlider';
+import ContactSection from "../components/ContactComponent/ContactSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroBanner />
       <ServicesSection />
       <LogoSlider />
+      <ContactSection />
     </div>
   )
 }
