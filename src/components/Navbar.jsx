@@ -24,7 +24,7 @@ export default function Navbar() {
 
   // SERVICES ITEMS
   const services = [
-    { name: "Services", path: "/service" },
+    { name: "Services", path: "/services" },
     { name: "Web & App Development", path: "/webappdevelopment" },
     { name: "Staff Augmentation", path: "/staff-augmentation" },
     { name: "Data Engineering", path: "/dataengineering" },
