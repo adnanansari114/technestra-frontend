@@ -8,7 +8,7 @@ export default function Navbar() {
     // ABOUT ITEMS
   const aboutItems = [
     {name: "About Us", path: '/about'},
-    { name: "Our Story", path: "/about/story" },
+    { name: "Our Story", path: "/our-story" },
     // { name: "Mission & Vision", path: "/about/mission" },
     // { name: "Core Values", path: "/about/values" },
     { name: "Leadership Team", path: "/leadership" },
@@ -25,12 +25,12 @@ export default function Navbar() {
   // SERVICES ITEMS
   const services = [
     { name: "Services", path: "/services" },
-    { name: "Web & App Development", path: "/webappdevelopment" },
-    { name: "Staff Augmentation", path: "/staff-augmentation" },
-    { name: "Data Engineering", path: "/dataengineering" },
-    { name: "Cloud Engineering & DevOps", path: "/clouddevops" },
+    { name: "Generative AI", path: "/generativeai" },
+    { name: "Computer Vision", path: "/computervision" },
+    { name: "Natural Language Processing", path: "/naturallanguageprocessing" },
+    { name: "MLOps AI Infrastructure", path: "/mlopsaiinfrastructure" },
     { name: "Artificial Intelligence", path: "/artifiacialintelligence" },
-    { name: "Maintenance & Support", path: "/maintenanceSupport" },
+    { name: "AIEthics Governance", path: "/aiethicsgovernance" },
     // { name: "Video Production", path: "/services/video" },
     // { name: "E-commerce Solutions", path: "/services/ecommerce" },
     // { name: "Cloud & Hosting", path: "/services/cloud" },

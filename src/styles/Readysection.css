@@ -1,0 +1,123 @@
+/* ============================================= */
+/*            READY SECTION - DARK PREMIUM       */
+/* ============================================= */
+
+.ready-section {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.ready-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.ready-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(10, 10, 30, 0.85) 0%, 
+    rgba(30, 20, 60, 0.75) 50%, 
+    rgba(10, 10, 30, 0.9) 100%
+  );
+  pointer-events: none;
+}
+
+.ready-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--white);
+  padding: 0 20px;
+}
+
+.ready-content h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  background: linear-gradient(120deg, var(--second-primary), var(--white), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ready-content p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  margin-bottom: 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ready-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+  border: 2px solid var(--second-primary);
+  color: var(--second-primary);
+  padding: 14px 48px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 40px rgba(76, 201, 240, 0.3);
+}
+
+.ready-cta-btn:hover {
+  background: var(--second-primary);
+  color: #000;
+  transform: translateY(-8px);
+  box-shadow: 0 0 60px rgba(76, 201, 240, 0.6);
+}
+
+.cta-arrow {
+  transition: transform 0.4s ease;
+}
+
+.ready-cta-btn:hover .cta-arrow {
+  transform: translateX(8px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .ready-content h2 {
+    font-size: 4rem;
+  }
+  .ready-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ready-section {
+    min-height: 70vh;
+  }
+  .ready-content h2 {
+    font-size: 3.5rem;
+  }
+  .ready-cta-btn {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ready-content h2 {
+    font-size: 3rem;
+  }
+}

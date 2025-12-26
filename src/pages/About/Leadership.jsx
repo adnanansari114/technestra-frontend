@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Team from '../../components/AboutComponent/Team';
 import '../../styles/About.css'
+import ReadySection from "../../components/ReadySection.jsx";
 
 export default function Leadership() {
   return (
@@ -59,7 +60,7 @@ export default function Leadership() {
       </section>
 
       {/* CEO SECTION */}
-      <section className="leader-profile ceo-profile">
+      {/* <section className="leader-profile ceo-profile">
         <div className="container">
           <div className="profile-grid reverse">
             <motion.div 
@@ -86,8 +87,9 @@ export default function Leadership() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Team />
+      <ReadySection />
     </>
   );
 }

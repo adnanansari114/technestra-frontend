@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import axios from "axios";
 import '../../styles/Blog.css';
+import ReadySection from "../../components/ReadySection.jsx"; 
 
 const API = import.meta.env.VITE_APP_API_URL;
 
@@ -110,6 +111,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      <ReadySection />
     </>
   );
 }

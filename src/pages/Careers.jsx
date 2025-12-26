@@ -272,6 +272,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import ReadySection from "../components/ReadySection.jsx";
 import { motion } from "framer-motion";
 import { 
   Search, 
@@ -545,6 +546,7 @@ export default function Careers() {
           </div>
         </div>
       </section>
+<ReadySection />
 
     </>
   );

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SocialSection from "../components/ContactComponent/SocialSection";
 import LocationSection from "../components/ContactComponent/LocationSection";
 import ContactSection from "../components/ContactComponent/ContactSection";
+import ReadySection from "../components/ReadySection.jsx";
 import '../styles/contact.css';
 
 export default function Contact() {
@@ -32,6 +33,7 @@ export default function Contact() {
       <SocialSection />
       <LocationSection />
       <ContactSection />
+      <ReadySection />
     </>
   );
 }

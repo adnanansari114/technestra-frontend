@@ -17,6 +17,7 @@ import {
   Upload
 } from "lucide-react";
 import '../styles/career.css';
+import ReadySection from "../components/ReadySection.jsx";  
 
 const API = import.meta.env.VITE_APP_API_URL || "https://itbackend-p7sr.onrender.com";
 
@@ -273,6 +274,7 @@ export default function JobApply() {
           </div>
         </div>
       </section>
+      <ReadySection />
     </>
   );
 }

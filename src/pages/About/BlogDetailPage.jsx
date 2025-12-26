@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
+import ReadySection from "../../components/ReadySection.jsx";
 import { 
   Calendar, 
   MessageCircle, 
@@ -286,6 +287,7 @@ export default function BlogDetailPage() {
           </div>
         </div>
       </section>
+      <ReadySection />
     </>
   );
 }

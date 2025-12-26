@@ -6,6 +6,7 @@ export default function Team() {
     { name: "Alex Rivera", role: "Creative Director", img: "A" },
     { name: "Jamie Lee", role: "Lead Developer", img: "J" },
     { name: "Taylor Kim", role: "UI/UX Designer", img: "T" },
+    { name: "Taylor Kim", role: "UI/UX Designer", img: "T" },
   ];
 
   return (
