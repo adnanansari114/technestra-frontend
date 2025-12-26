@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import "../styles/ReadySection.css";
+import "../styles/Readysection.css";
 
 export default function ReadySection() {
   return (
