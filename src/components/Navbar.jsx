@@ -95,7 +95,7 @@ export default function Navbar() {
             <Link to="/blog" className="nav-link">Blog</Link>
             <Link to="/careers" className="nav-link">Opportunity</Link>
             <Link to="/contact" className="nav-link">Contact</Link>
-            <Link to="/get-started" className="btn-secondary nav-btn">
+            <Link to="/contact" className="btn-secondary nav-btn">
               Get Started
             </Link>
           </div>
@@ -113,7 +113,7 @@ export default function Navbar() {
         <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
         <Link to="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
         <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-        <Link to="/get-started" className="btn-primary mobile-btn" onClick={() => setMobileMenuOpen(false)}>
+        <Link to="/contact" className="btn-primary mobile-btn" onClick={() => setMobileMenuOpen(false)}>
           Get Started
         </Link>
       </div>
