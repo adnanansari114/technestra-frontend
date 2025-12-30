@@ -2,21 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Brain, Database, Cloud, Globe, Users, Wrench, ArrowRight } from "lucide-react";
 import '../../styles/Service.css';
+import ServiceComponent from "../../components/ServiceComponent";
 
 export default function Services() {
-    const services = [
-        { icon: Brain, title: "Artificial Intelligence", desc: "Drive smarter decisions and intelligent automation with AI solutions tailored to your business needs.", points: ["Machine Learning | Predictive Analytics", "Chatbots | NLP"], link: "/artifiacialintelligence" },
-        { icon: Database, title: "Data Engineering", desc: "Unlock the true power of your data with modern pipelines, data lakes, and real-time analytics infrastructure.", points: ["ETL Pipelines | Data Lakes | Big Data"], link: "/dataengineering" },
-        { icon: Cloud, title: "Cloud Engineering & DevOps", desc: "Scalable, secure, and automated cloud infrastructure with CI/CD, Kubernetes, and Infrastructure as Code.", points: ["AWS | Azure | Docker | Terraform"], link: "/clouddevops" },
-        { icon: Globe, title: "Web & App Development", desc: "Fast, secure, and user-centric web and mobile applications built with modern frameworks.", points: ["React | Next.js | React Native | PWA"], link: "/webappdevelopment" },
-        { icon: Users, title: "Staff Augmentation", desc: "Scale your team instantly with pre-vetted senior developers, designers, and cloud experts.", points: ["On-demand Talent | Fast Onboarding | Flexible Terms"], link: "/staff-augmentation" },
-        { icon: Wrench, title: "Maintenance & Support", desc: "24/7 monitoring, bug fixes, performance optimization, and SLA-backed technical support.", points: ["Proactive Monitoring | Security Updates | Performance Tuning"], link: "/maintenanceSupport" }
-    ];
+    
 
     return (
         <>
-
-            {/* HERO - MINIMAL & POWERFUL */}
+            {/* HERO - MINIMAL & POWERFUL (Same as before) */}
             <section className="services-hero-minimal">
                 <div className="container">
                     <motion.div
@@ -41,69 +34,30 @@ export default function Services() {
                 </div>
             </section>
 
-            {/* SERVICES GRID - CLEAN DARK */}
-            <section id="services" className="services-section-dark">
+            <ServiceComponent />
+
+            {/* WHY CHOOSE US - SAME AS BEFORE */}
+            <section className="why-choose-premiums">
                 <div className="container">
-                    <div className="services-header-center">
-                        <h2 className="top-heading white">Our Services</h2>
-                    </div>
-
-                    <div className="services-grid-clean">
-                        {services.map((service, i) => {
-                            const Icon = service.icon;
-                            return (
-                                <motion.a
-                                    href={service.link}
-                                    key={i}
-                                    initial={{ opacity: 0, y: 60 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: i * 0.1 }}
-                                    className="service-card-minimal"
-                                >
-                                    <div className="service-icon-glow">
-                                        <Icon size={42} />
-                                    </div>
-                                    <h3>{service.title}</h3>
-                                    <p>{service.desc}</p>
-                                    <div className="service-points">
-                                        {service.points.map((p, pi) => (
-                                            <span key={pi}>{p}</span>
-                                        ))}
-                                    </div>
-                                    <span className="service-arrow">
-                                        <ArrowRight size={20} />
-                                    </span>
-                                </motion.a>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            <section className="why-choose-premium">
-                <div className="container">
-                    <div className="why-grid-premium">
-
-                        {/* Left - Animated Glowing List */}
-                        <div className="why-content-glow">
+                    <div className="why-grid-premiums">
+                        <div className="why-content-glows">
                             <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="why-title-glow"
+                                className="why-title-glows"
                             >
-                                Why Top Companies<br />
-                                <span className="gradient-highlight">Choose Us</span>
+                                Why<br />
+                                <span className="gradient-highlights">Choose Us</span>
                             </motion.h2>
 
-                            <div className="why-list-glow">
+                            <div className="why-list-glows">
                                 {[
-                                    "14+ Years of Proven Excellence",
-                                    "Senior-Level Talent Only",
-                                    "Agile & Transparent Process",
-                                    "On-Time, On-Budget Delivery",
-                                    "Secure & Scalable Solutions",
+                                    "Quality Comes First",
+                                    "On-Time Delivery",
+                                    "Transparent Pricing",
+                                    "Scalable Team Options",
+                                    "Customer-Centric Support",
                                     "24/7 Dedicated Support"
                                 ].map((item, index) => (
                                     <motion.div
@@ -112,10 +66,10 @@ export default function Services() {
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: index * 0.15, duration: 0.6 }}
-                                        className="why-item"
+                                        className="why-items"
                                     >
-                                        <div className="glow-line"></div>
-                                        <div className="why-icon">
+                                        <div className="glow-lines"></div>
+                                        <div className="why-icons">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
@@ -126,9 +80,8 @@ export default function Services() {
                             </div>
                         </div>
 
-                        {/* Right - Same Image with Better Effect */}
-                        <div className="why-visual-premium">
-                            <div className="image-glow-effect"></div>
+                        <div className="why-visual-premiums">
+                            <div className="image-glow-effects"></div>
                             <motion.img
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
@@ -141,7 +94,6 @@ export default function Services() {
                     </div>
                 </div>
             </section>
-
         </>
     );
 }

@@ -6,18 +6,21 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Services from './pages/Services/Services'
 import ArtificialIntelligence from './pages/Services/ArtificialIntelligence'
-import GenerativeAI from './pages/Services/GenerativeAI'
-import ComputerVision from './pages/Services/ComputerVision'
-import NaturalLanguageProcessing from './pages/Services/NaturalLanguageProcessing'
-import MLOpsAIInfrastructure from './pages/Services/MLOpsAIInfrastructure'
-import AIEthicsGovernance from './pages/Services/AIEthicsGovernance'
+import WebAndAppDevelopment from './pages/Services/WebAndAppDevelopment'
+import StaffAugmentation from './pages/Services/StaffAugmentation'
+import CloudDevops from './pages/Services/CloudDevops'
+import DataEngineering from './pages/Services/DataEngineering'
+import Maintenance from './pages/Services/Maintenance'
 import Careers from './pages/Careers'
 import JobApply from './pages/JobApply'
 import Leadership from './pages/About/Leadership'
 import Blog from './pages/About/Blog'
 import OurStory from './pages/About/OutStory'
 import BlogDetailPage from './pages/About/BlogDetailPage'
+import TechStackWhyUs from './pages/About/TechstackWhyUs'
 import Footer from './components/Footer'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms' 
 
 function App() {
   return (
@@ -34,15 +37,18 @@ function App() {
             <Route path="/jobapply/:id" element={<JobApply />} />
             <Route path="/services" element={<Services />} />
             <Route path="/artifiacialintelligence" element={<ArtificialIntelligence />} />
-            <Route path="/generativeai" element={<GenerativeAI />} />
-            <Route path="/computervision" element={<ComputerVision />} />
-            <Route path='/naturallanguageprocessing' element={<NaturalLanguageProcessing />} />
-            <Route path='/mlopsaiinfrastructure' element={<MLOpsAIInfrastructure />} />
-            <Route path='/aiethicsgovernance' element={<AIEthicsGovernance />} />
+            <Route path="/webandappdevelopment" element={<WebAndAppDevelopment />} />
+            <Route path="/staffaugmentation" element={<StaffAugmentation />} />
+            <Route path='/cloud-devops' element={<CloudDevops />} />
+            <Route path='/dataengineering' element={<DataEngineering />} />
+            <Route path='/maintenance' element={<Maintenance />} />
             <Route path='/leadership' element={<Leadership />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/blog/:id' element={<BlogDetailPage />} />
             <Route path='/our-story' element={<OurStory />} />
+            <Route path='/techstack-whyus' element={<TechStackWhyUs />} />
+            <Route path='/privacy' element={<Privacy />} />
+            <Route path='/terms' element={<Terms />} />
           </Routes>
         </main>
       </div>

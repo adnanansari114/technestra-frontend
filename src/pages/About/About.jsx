@@ -1,15 +1,15 @@
-import React from 'react'
-import Testimonials from '../../components/AboutComponent/Testimonials';
-import Portfolio from '../../components/HomeComponent/Portfolio';
-import '../../styles/About.css';
+import React from 'react';
+import AboutIntro from '../../components/AboutComponent/AboutIntro';     
+import OurProcess from '../../components/AboutComponent/OurProcess';
 import ReadySection from "../../components/ReadySection.jsx";
+import '../../styles/About.css';
 
 export default function About() {
   return (
-    <div>
-      <Testimonials />
-      <Portfolio />
+    <>
+      <AboutIntro />
+      <OurProcess />
       <ReadySection />
-    </div>
-  )
+    </>
+  );
 }

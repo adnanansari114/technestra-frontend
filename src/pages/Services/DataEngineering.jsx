@@ -1,58 +1,84 @@
+// MLOpsAIInfrastructure.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Brain, Zap, Bot, Sparkles, Image, Music, ArrowRight, ChevronDown } from "lucide-react";
+import { Brain, Zap, Server, GitBranch, ShieldAlert, ArrowRight, ChevronDown } from "lucide-react";
 import '../../styles/Service.css';
 
-export default function GenerativeAI() {
+export default function DataEngineering() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const aiServices = [
     {
-      title: "Text & Content Generation",
-      icon: Bot,
-      points: ["AI-Powered Copywriting", "Automated Blog & Article Creation", "Marketing Content at Scale", "Multilingual Content Synthesis"]
+      title: "Model Deployment & Serving",
+      icon: Server,
+      points: [
+        "Scalable Model APIs & Endpoints",
+        "Containerized Deployment (Docker/K8s)",
+        "Serverless & Edge Deployment",
+        "Multi-Cloud & Hybrid Solutions"
+      ]
     },
     {
-      title: "Image & Visual Generation",
-      icon: Image,
-      points: ["Photorealistic Image Synthesis", "Custom Illustration & Design", "Product Visualization", "Brand Asset Generation"]
+      title: "CI/CD Pipelines for AI",
+      icon: GitBranch,
+      points: [
+        "Automated Model Training Pipelines",
+        "Version Control for Models & Data",
+        "Continuous Integration & Testing",
+        "One-Click Rollback & Canary Releases"
+      ]
     },
     {
-      title: "Video & Motion Graphics",
+      title: "Monitoring & Observability",
       icon: Zap,
-      points: ["Text-to-Video Creation", "Animated Explainer Videos", "Personalized Video Ads", "Synthetic Media Production"]
+      points: [
+        "Real-Time Performance Tracking",
+        "Model Drift & Data Drift Detection",
+        "Explainability & Prediction Logging",
+        "Custom Dashboards & Alerts"
+      ]
     },
     {
-      title: "Audio & Voice Synthesis",
-      icon: Music,
-      points: ["Natural-Sounding Voiceovers", "Custom AI Voices & Clones", "Podcast & Audiobook Generation", "Music Composition Assistance"]
+      title: "Automated Retraining & Governance",
+      icon: ShieldAlert,
+      points: [
+        "Trigger-Based Model Retraining",
+        "Data Pipeline Orchestration",
+        "Model Registry & Lineage Tracking",
+        "Compliance & Audit Trails"
+      ]
     },
     {
-      title: "Creative Code & Design",
-      icon: Sparkles,
-      points: ["AI-Assisted UI/UX Design", "Automated Code Generation", "3D Model & Asset Creation", "Logo & Branding Automation"]
+      title: "Cost & Resource Optimization",
+      icon: Brain,
+      points: [
+        "GPU/TPU Resource Management",
+        "Auto-Scaling Infrastructure",
+        "Cost Forecasting & Reduction",
+        "Sustainable AI Operations"
+      ]
     }
   ];
 
   const whyChooseUs = [
-    "Cutting-Edge Generative Models",
-    "Custom Fine-Tuned Solutions",
-    "Ethical & Safe AI Deployment",
-    "High-Quality Consistent Output",
-    "Full Creative Control"
+    "Production-Grade Reliability",
+    "End-to-End Automation",
+    "Seamless Team Collaboration",
+    "Enterprise Security Standards",
+    "Proven at Massive Scale"
   ];
 
   const ourProcess = [
-    { num: "01", title: "Discovery & Data Foundation", desc: "We deeply understand your creative needs and prepare high-quality training data or leverage pre-trained models." },
-    { num: "02", title: "Model Selection & Fine-Tuning", desc: "We choose and customize the best generative models (Stable Diffusion, GPT, etc.) for your specific use case." },
-    { num: "03", title: "Rigorous Validation & Refinement", desc: "Every output is tested for quality, brand alignment, and ethical compliance." },
-    { num: "04", title: "Production Deployment & Evolution", desc: "Seamless integration with ongoing monitoring and continuous model improvement." }
+    { num: "01", title: "Discovery & Data Foundation", desc: "We assess your current AI workflow, infrastructure, and pain points to design a robust MLOps strategy." },
+    { num: "02", title: "Intelligent Model Architecture", desc: "We build scalable pipelines using tools like Kubeflow, MLflow, Airflow, and cloud-native services." },
+    { num: "03", title: "Rigorous Validation & Refinement", desc: "Every component is tested for reliability, security, scalability, and performance under real load." },
+    { num: "04", title: "Production Deployment & Evolution", desc: "Full rollout with ongoing support, monitoring, optimization, and continuous evolution." }
   ];
 
   const faqs = [
-    { q: "Can you create custom AI voices or images for our brand?", a: "Yes! We specialize in fine-tuning models on your brand assets to generate consistent, on-brand content." },
-    { q: "How do you ensure generated content is original and safe?", a: "We implement plagiarism checks, content filters, and ethical guidelines in every deployment." },
-    { q: "Do you support multimodal generation?", a: "Absolutely — text, image, video, and audio generation in single or combined workflows." }
+    { q: "What tools and platforms do you use for MLOps?", a: "We work with MLflow, Kubeflow, Airflow, Terraform, GitHub Actions, AWS SageMaker, Azure ML, GCP Vertex AI, and custom solutions." },
+    { q: "Can you help migrate existing models to production?", a: "Yes! We specialize in taking research/prototype models and making them production-ready with monitoring and automation." },
+    { q: "How do you ensure models stay accurate over time?", a: "Through continuous monitoring, automated drift detection, and scheduled retraining pipelines with human-in-the-loop approval." }
   ];
 
   return (
@@ -62,18 +88,18 @@ export default function GenerativeAI() {
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }} className="ai-hero-main">
             <div className="ai-service-badge">
-              <Sparkles size={34} />
-              <span>Generative AI</span>
+              <Server size={34} />
+              <span>MLOps & AI Infrastructure</span>
             </div>
             <h1 className="ai-hero-title">
-              Create<br />
-              <span className="title-gradient">What Was Impossible</span>
+              AI That Runs<br />
+              <span className="title-gradient">Flawlessly at Scale</span>
             </h1>
             <p className="ai-hero-text">
-              From text to images, videos to voices — we build generative AI systems that create original, high-quality content at scale.
+              We build robust MLOps platforms and infrastructure so your AI models deliver reliable, high-performance results in production — day after day.
             </p>
             <a href="/contact" className="btn-primary ai-cta-btn">
-              Generate the Future <ArrowRight className="ml-2" size={22} />
+              Scale Your AI <ArrowRight className="ml-2" size={22} />
             </a>
           </motion.div>
         </div>
@@ -81,7 +107,7 @@ export default function GenerativeAI() {
 
       <section className="ai-capabilities-section">
         <div className="container">
-          <h2 className="service-box-heading white">Core Generative Capabilities</h2>
+          <h2 className="service-box-heading white">Core MLOps Capabilities</h2>
           <div className="ai-services-grid">
             {aiServices.map((service, index) => {
               const Icon = service.icon;
@@ -151,9 +177,9 @@ export default function GenerativeAI() {
 
       <section className="ai-final-cta">
         <div className="container">
-          <h2>Ready to Create with AI?</h2>
-          <p>Let’s build generative systems that produce extraordinary content.</p>
-          <a href="/contact" className="btn-primary large">Start Generating</a>
+          <h2>Ready to Run AI Like a Pro?</h2>
+          <p>Let’s build infrastructure that makes your AI reliable, scalable, and future-proof.</p>
+          <a href="/contact" className="btn-primary large">Build Your MLOps Platform</a>
         </div>
       </section>
     </>

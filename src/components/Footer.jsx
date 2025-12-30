@@ -17,9 +17,11 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Company Info */}
           <div className="footer-company">
-            <h2 className="footer-logo">TheITTalent</h2>
+            <div className="footer-logo">
+              <img src="/images/logo.jpg" alt="Logo" className="logo" />
+            </div>
             <p className="footer-desc">
-              The IT Talent is a global IT staffing partner helping businesses scale faster with the right people. 
+              Technestra is a global IT staffing partner helping businesses scale faster with the right people. 
               With over 14 years of expertise, we specialize in C2C, full-time, and contract hiring.
             </p>
             <div className="social-links">
@@ -70,18 +72,23 @@ export default function Footer() {
           <div className="footer-links-column">
             <h4>Our Services</h4>
             <ul>
-              <li><Link to="/services/artificial-intelligence">Artificial Intelligence</Link></li>
-              <li><Link to="/services/data-engineering">Data Engineering</Link></li>
-              <li><Link to="/services/cloud-devops">Cloud & DevOps</Link></li>
-              <li><Link to="/services/web-app-development">Web & App Development</Link></li>
-              <li><Link to="/services/staff-augmentation">Staff Augmentation</Link></li>
-              <li><Link to="/services/maintenance-support">Maintenance & Support</Link></li>
+              <li><Link to="/artificialintelligence">Artificial Intelligence & Machine Learning</Link></li>
+              <li><Link to="/dataengineering">Data Engineering & Analytics</Link></li>
+              <li><Link to="/cloud-devops">Cloud Engineering & DevOps</Link></li>
+              <li><Link to="/webandappdevelopment">Web & App Development</Link></li>
+              <li><Link to="/staffaugmentation">Staff Augmentation</Link></li>
+              <li><Link to="/maintenance">Maintenance & Support</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottoms">
-          <p>&copy; 2025 The IT Talent. All rights reserved. | Talent • Technology • Transformation</p>
+          <p>&copy; 2025 Technestra. All rights reserved. | Talent • Technology • Transformation</p>
+          <div className="footer-legal">
+            <button><Link to="/privacy">Privacy Policy</Link></button>
+            <span className="separator">•</span>
+            <button><Link to="/terms">Terms of Service</Link></button>
+          </div>
         </div>
       </div>
     </footer>

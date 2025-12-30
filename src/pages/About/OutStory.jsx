@@ -1,28 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Brain, Zap, Target, Users, Rocket, Globe } from "lucide-react";
+import { 
+  Zap, 
+  Shield, 
+  Target, 
+  Users, 
+  Rocket, 
+  Globe, 
+  Brain, 
+  Cloud, 
+  Database, 
+  FileText, 
+  Clock, 
+  HeartHandshake 
+} from "lucide-react";
 import ReadySection from "../../components/ReadySection";
 import '../../styles/About.css';
 
 export default function OurStory() {
-  const journey = [
-    { year: "2011", title: "Foundation", desc: "Started as a small team of passionate developers solving complex problems with clean code." },
-    { year: "2015", title: "Global Expansion", desc: "Expanded to serve clients across USA, Europe, and Middle East with remote talent." },
-    { year: "2018", title: "Cloud & DevOps Focus", desc: "Became early adopters of AWS, Azure, and modern DevOps practices." },
-    { year: "2021", title: "AI Revolution Begins", desc: "Launched dedicated AI/ML division delivering production-grade intelligent systems." },
-    { year: "2024", title: "Enterprise Scale", desc: "Helped Fortune 500 companies build AI-powered products and modern data platforms." },
-    { year: "2025", title: "Today", desc: "Leading the future of intelligent digital transformation with 14+ years of excellence." }
+  // Why Choose Us Cards
+  const whyChoose = [
+    { icon: Zap, title: "Quality Comes First", desc: "We focus on results, performance & exceptional user experience in every solution." },
+    { icon: Target, title: "On-Time Delivery", desc: "Proven track record of delivering projects on schedule with zero compromises." },
+    { icon: Shield, title: "Transparent Pricing", desc: "No hidden costs — clear, honest, and competitive pricing from day one." },
+    { icon: Users, title: "Scalable Team Options", desc: "From single experts to full dedicated teams — we scale with your needs." },
+    { icon: HeartHandshake, title: "Customer-Centric Support", desc: "Dedicated support teams ensuring your success long after launch." },
   ];
 
-  const values = [
-    { icon: Brain, title: "Innovation First", desc: "We push boundaries with cutting-edge AI, cloud, and modern engineering." },
-    { icon: Target, title: "Results Driven", desc: "Every solution is designed to deliver measurable business impact." },
-    { icon: Users, title: "Talent Obsessed", desc: "We work only with senior engineers who integrate and deliver from day one." },
+  // Quick Services Preview
+  const servicesPreview = [
+    { icon: Globe, title: "Web & App Development", desc: "Custom websites, mobile apps (Android/iOS), and scalable platforms." },
+    { icon: Users, title: "Staff Augmentation", desc: "Pre-vetted senior talent — remote, hybrid, or onsite." },
+    { icon: Cloud, title: "Cloud & DevOps", desc: "AWS, Azure, GCP — automation, CI/CD, monitoring & optimization." },
+    { icon: Database, title: "Data & Analytics", desc: "Pipelines, BI tools, real-time insights & visualization." },
+    { icon: Brain, title: "AI & Machine Learning", desc: "Intelligent automation, NLP, predictive models & innovation." },
+    { icon: Rocket, title: "Maintenance & Support", desc: "24/7 monitoring, updates, security & performance optimization." },
   ];
 
   return (
     <>
-
       {/* HERO */}
       <section className="story-hero">
         <div className="neural-glow"></div>
@@ -34,50 +50,54 @@ export default function OurStory() {
             className="story-hero-content"
           >
             <h1 className="story-title">
-              Our Journey<br />
-              <span className="ai-gradient">Into Intelligence</span>
+              Technestra —<br />
+              <span className="ai-gradient">Your Digital Transformation Partner</span>
             </h1>
             <p className="story-subtitle">
-              14+ years of building the future — from clean code to production AI systems that transform businesses.
+              Empowering Businesses with Modern IT Solutions & Talent
             </p>
+            <p className="hero-desc" style={{ maxWidth: '800px', margin: '2rem auto', fontSize: '1.2rem', opacity: 0.9 }}>
+              Technestra helps companies accelerate digital transformation with custom software development, top-tier engineering talent, and scalable technology solutions — all tailored to your growth goals.
+            </p>
+            <div className="hero-cta" style={{ marginTop: '2.5rem', display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="/contact" className="btn-primary large">Contact Us</a>
+              <a href="#services" className="btn-secondary">Explore Services</a>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* JOURNEY TIMELINE */}
+      {/* ABOUT TEXT + WHY CHOOSE */}
       <section className="journey-section">
         <div className="container">
-          <h2 className="top-heading white">Our Journey</h2>
-          <div className="timeline">
-            {journey.map((milestone, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.15 }}
-                className={`timeline-item ${i % 2 === 0 ? "left" : "right"}`}
-              >
-                <div className="timeline-dot"></div>
-                <div className="timeline-content">
-                  <span className="timeline-year">{milestone.year}</span>
-                  <h3>{milestone.title}</h3>
-                  <p>{milestone.desc}</p>
-                </div>
-              </motion.div>
-            ))}
+          <h2 className="top-heading white">About Technestra</h2>
+          <div className="about-main-text" style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto 4rem' }}>
+            <p style={{ fontSize: '1.2rem', opacity: 0.9, lineHeight: '1.8' }}>
+              Technestra is a forward-thinking technology services company committed to delivering high-impact digital solutions. 
+              We partner with businesses of all sizes — from startups to enterprises — to solve real challenges with innovative technology and engineering excellence.
+            </p>
+            <div style={{ margin: '3rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+              <div>
+                <h4 style={{ color: 'var(--primary)', marginBottom: '1rem', fontSize: '1.5rem' }}>Our Vision</h4>
+                <p>To enable organizations to achieve more through purposeful technology.</p>
+              </div>
+              <div>
+                <h4 style={{ color: 'var(--primary)', marginBottom: '1rem', fontSize: '1.5rem' }}>Our Mission</h4>
+                <p>To deliver scalable, secure, and user-centered solutions that drive business success.</p>
+              </div>
+            </div>
+            <p style={{ fontSize: '1.1rem', opacity: 0.85 }}>
+              At Technestra, our mission is to empower businesses with cutting-edge technology solutions and expert IT talent that drive measurable success. 
+              With a customer-first approach and a passion for innovation, we help you stay competitive in a fast-moving digital landscape.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* VALUES */}
-      <section className="values-section">
-        <div className="container">
-          <h2 className="top-heading white">Our Core Values</h2>
+          <h2 className="top-heading white" style={{ marginTop: '6rem' }}>Why Choose Us?</h2>
           <div className="values-grid">
-            {values.map((value, i) => {
-              const Icon = value.icon;
+            {whyChoose.map((item, i) => {
+              const Icon = item.icon;
               return (
-                <motion.div
+                <div
                   key={i}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -87,54 +107,101 @@ export default function OurStory() {
                   <div className="value-icon">
                     <Icon size={48} />
                   </div>
-                  <h3>{value.title}</h3>
-                  <p>{value.desc}</p>
-                </motion.div>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="stats-section">
+      {/* SERVICES PREVIEW */}
+      <section className="values-section">
         <div className="container">
-          <div className="stats-grid">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              className="stat-item"
-            >
-              <h3>14+</h3>
-              <p>Years of Excellence</p>
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="stat-item"
-            >
-              <h3>50+</h3>
-              <p>Global Clients</p>
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4 }}
-              className="stat-item"
-            >
-              <h3>200+</h3>
-              <p>Projects Delivered</p>
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.6 }}
-              className="stat-item"
-            >
-              <h3>98%</h3>
-              <p>Client Retention</p>
-            </motion.div>
+          <h2 className="top-heading white">🛠️ Our Services</h2>
+          <div className="values-grid">
+            {servicesPreview.map((service, i) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={i}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  className="value-card"
+                >
+                  <div className="value-icon">
+                    <Icon size={48} />
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* OUR PROCESS */}
+      <section className="journey-section">
+        <div className="container">
+          <h2 className="top-heading white">🧭 Our Process (How We Work)</h2>
+          <div className="timeline">
+            {[
+              "Discovery & Requirement Analysis",
+              "Design & Development",
+              "Quality Assurance & Testing",
+              "Deployment & Launch",
+              "Maintenance & Ongoing Support"
+            ].map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.15 }}
+                className={`timeline-item ${i % 2 === 0 ? "left" : "right"}`}
+              >
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">{i + 1}</span>
+                  <h3>{step}</h3>
+                  <p>Ensuring excellence at every stage of your project lifecycle.</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ENGAGEMENT MODELS */}
+      <section className="values-section">
+        <div className="container">
+          <h2 className="top-heading white">📋 Engagement Models</h2>
+          <div className="values-grid">
+            {[
+              { icon: FileText, title: "Fixed-Price Projects", desc: "Clear scope & delivery schedule" },
+              { icon: Clock, title: "Time & Material", desc: "Flexible resource allocation" },
+              { icon: Users, title: "Dedicated Teams", desc: "Long-term focused talent" },
+              { icon: Target, title: "Consulting & Strategy", desc: "Expert guidance for digital transformation" },
+            ].map((model, i) => {
+              const Icon = model.icon;
+              return (
+                <div
+                  key={i}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  className="value-card"
+                >
+                  <div className="value-icon">
+                    <Icon size={48} />
+                  </div>
+                  <h3>{model.title}</h3>
+                  <p>{model.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

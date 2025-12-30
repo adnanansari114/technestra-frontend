@@ -28,23 +28,23 @@ export default function HeroBanner() {
         <div className="home-hero-text">
           {/* Animated Heading */}
           <h1 className="home-hero-heading">
-            <span className="gradient-text">Build</span> Your Future
+            <span className="gradient-text">Technestra -</span> Transforming
             <br />
-            With <span className="gradient-text">Innovation</span>
+            Ideas into <span className="gradient-text">Digital Success</span>
           </h1>
 
           {/* Paragraph */}
           <p className="home-hero-para">
-            We deliver cutting-edge web & mobile solutions that transform ideas into powerful digital experiences. Fast. Secure. Scalable.
+            We enable businesses to innovate, scale, and win in the digital era with reliable IT services, deep technology expertise, and flexible talent solutions.
           </p>
 
           {/* Buttons */}
           <div className="home-hero-buttons">
-            <Link to="/get-started" className="home-hero-btn">
-              Get Started Now
+            <Link to="/contact" className="home-hero-btn">
+              Contact Us
             </Link>
-            <Link to="/portfolio" className="btn-secondary home-hero-btn-outline">
-              View Our Work
+            <Link to="/services" className="btn-secondary home-hero-btn-outline">
+              Explore Services
             </Link>
           </div>
         </div>

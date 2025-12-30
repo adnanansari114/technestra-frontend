@@ -8,9 +8,9 @@ export default function Navbar() {
     // ABOUT ITEMS
   const aboutItems = [
     {name: "About Us", path: '/about'},
-    { name: "Our Story", path: "/our-story" },
+    { name: "Our Core", path: "/our-story" },
     // { name: "Mission & Vision", path: "/about/mission" },
-    // { name: "Core Values", path: "/about/values" },
+    { name: "Our Technology Stack", path: "/techstack-whyus" },
     { name: "Leadership Team", path: "/leadership" },
     // { name: "Company History", path: "/about/history" },
     // { name: "Awards & Recognition", path: "/about/awards" },
@@ -25,12 +25,12 @@ export default function Navbar() {
   // SERVICES ITEMS
   const services = [
     { name: "Services", path: "/services" },
-    { name: "Generative AI", path: "/generativeai" },
-    { name: "Computer Vision", path: "/computervision" },
-    { name: "Natural Language Processing", path: "/naturallanguageprocessing" },
-    { name: "MLOps AI Infrastructure", path: "/mlopsaiinfrastructure" },
-    { name: "Artificial Intelligence", path: "/artifiacialintelligence" },
-    { name: "AIEthics Governance", path: "/aiethicsgovernance" },
+    { name: " Web & App Development", path: "/webandappdevelopment" },
+    { name: "Staff Augmentation", path: "/staffaugmentation" },
+    { name: "Cloud Engineering & DevOps", path: "/cloud-devops" },
+    { name: "Data Engineering & Analytics", path: "/dataengineering" },
+    { name: "Artificial Intelligence & Machine Learning", path: "/artifiacialintelligence" },
+    { name: "Maintenance & 24/7 Support", path: "/maintenance" },
     // { name: "Video Production", path: "/services/video" },
     // { name: "E-commerce Solutions", path: "/services/ecommerce" },
     // { name: "Cloud & Hosting", path: "/services/cloud" },
@@ -94,7 +94,7 @@ export default function Navbar() {
             </div>
             <Link to="/blog" className="nav-link">Blog</Link>
             <Link to="/careers" className="nav-link">Opportunity</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/contact" className="nav-link">Contact Us</Link>
             <Link to="/contact" className="btn-secondary nav-btn">
               Get Started
             </Link>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Brain, Zap, Eye, Scan, Camera, Activity, ArrowRight, ChevronDown } from "lucide-react";
 import '../../styles/Service.css';
 
-export default function ComputerVision() {
+export default function StaffAugmentation() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const aiServices = [

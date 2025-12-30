@@ -182,45 +182,45 @@
     transform: translateX(8px);
 }
 
-.why-choose-premium {
+.why-choose-premiums {
     background: #000;
     padding: 30px 0;
     position: relative;
     overflow: hidden;
 }
 
-.why-grid-premium {
+.why-grid-premiums {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     align-items: center;
 }
 
-.why-content-glow {
+.why-content-glows {
     color: var(--white);
 }
 
-.why-title-glow {
+.why-title-glows {
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 16px;
 }
 
-.gradient-highlight {
+.gradient-highlights {
     background: linear-gradient(120deg, var(--second-primary), var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.why-list-glow {
+.why-list-glows {
     display: flex;
     flex-direction: column;
     /* gap: 28px; */
 }
 
-.why-item {
+.why-items {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -228,7 +228,7 @@
     position: relative;
 }
 
-.glow-line {
+.glow-lines {
     position: absolute;
     left: -40px;
     top: 50%;
@@ -238,11 +238,11 @@
     transition: height 0.6s ease;
 }
 
-.why-item:hover .glow-line {
+.why-items:hover .glow-lines {
     height: 100%;
 }
 
-.why-icon {
+.why-icons {
     width: 45px;
     height: 45px;
     background: rgba(76, 201, 240, 0.15);
@@ -255,26 +255,26 @@
     transition: all 0.4s ease;
 }
 
-.why-item:hover .why-icon {
+.why-items:hover .why-icons {
     background: rgba(76, 201, 240, 0.3);
     transform: scale(1.1);
     box-shadow: 0 0 30px rgba(76, 201, 240, 0.4);
 }
 
-.why-item span {
+.why-items span {
     font-size: 1.35rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.95);
 }
 
 /* Right Side Image - Enhanced */
-.why-visual-premium {
+.why-visual-premiums {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.image-glow-effect {
+.image-glow-effects {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -287,7 +287,7 @@
     animation: breathe 8s infinite ease-in-out;
 }
 
-.why-visual-premium img {
+.why-visual-premiums img {
     border-radius: 28px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
     max-width: 100%;
@@ -295,7 +295,7 @@
     transition: all 0.6s ease;
 }
 
-.why-visual-premium:hover img {
+.why-visual-premiums:hover img {
     transform: translateY(-10px);
     box-shadow: 0 60px 120px rgba(76, 201, 240, 0.15);
 }

@@ -1,6 +1,6 @@
 /* TESTIMONIALS */
 .testimonials-section{background:#0f0f0f;padding:120px 0;color:#fff}
-.testimonials-slider{position:relative;height:250px;overflow:hidden;border-radius:24px}
+.testimonials-slider{position:relative;height:300px;overflow:hidden;border-radius:24px}
 .testimonial-card{position:absolute;inset:0;background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:1px solid rgba(76,201,240,0.3);padding:30px;border-radius:24px;opacity:0;transform:scale(0.9);transition:all 0.8s cubic-bezier(0.25,0.8,0.25,1)}
 .testimonial-card.active{opacity:1;transform:scale(1);z-index:2}
 .quote-icon{font-size:8rem;opacity:0.1;position:absolute;top:-20px;left:-20px}
@@ -12,9 +12,17 @@
 .dot.active{background:var(--second-primary);transform:scale(1.4)}
 
 /* PORTFOLIO */
-.portfolio-section{padding:120px 0;background:#f8f9fa}
+.portfolio-section{padding:30px 0;background:#f8f9fa; align-items:center}
+.portfolio-heading{
+  font-size:2.5rem;
+  font-weight:800;
+  text-align:center;
+  color:var(--primary);
+  margin-bottom:1.5rem;
+  line-height:1.2;
+}
 .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.portfolio-item{position:relative;overflow:hidden;border-radius:20px;cursor:pointer;aspect-ratio:1/1.2}
+.portfolio-item{position:relative;overflow:hidden;border-radius:20px;cursor:pointer;aspect-ratio:1.5/1.2}
 .placeholder-img{background:#ddd;display:grid;place-items:center;font-size:4rem;color:#999}
 .portfolio-overlay{position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,0.9));display:flex;flex-direction:column;justify-content:end;padding:40px;color:#fff;transform:translateY(100%);transition:0.6s}
 .portfolio-item:hover .portfolio-overlay{transform:translateY(0)}
@@ -249,7 +257,7 @@
 }
 
 .story-title {
-  font-size: 5.5rem;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 32px;
@@ -263,17 +271,23 @@
 }
 
 .story-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   opacity: 0.9;
   line-height: 1.8;
   max-width: 700px;
   margin: 0 auto;
 }
+.hero-desc{
+  max-width: 800px;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+
+}
 
 /* JOURNEY TIMELINE */
 .journey-section {
   background: #000;
-  padding: 140px 0;
+  padding: 40px 0;
 }
 
 .timeline {
@@ -369,7 +383,7 @@
 .value-card {
   background: rgba(30,30,50,0.6);
   border-radius: 24px;
-  padding: 48px;
+  padding: 25px;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.08);
   transition: all 0.6s ease;
@@ -431,6 +445,10 @@
   font-weight: 600;
 }
 
+.about-main-text{
+  color: white;
+}
+
 /* ANIMATIONS */
 @keyframes pulseGlow {
   0% { opacity: 0.1; }
@@ -456,4 +474,191 @@
 @media (max-width: 768px) {
   .story-title { font-size: 3.8rem; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
+}
+
+
+
+
+
+
+/* Tech Stack & Why Us - Dark Premium Theme */
+.tech-stack-section {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  background: black;
+}
+
+.tech-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+    url('https://www.shutterstock.com/shutterstock/videos/3838800857/thumb/1.jpg') center/cover no-repeat,
+    url('https://www.shutterstock.com/image-vector/5g-6g-dot-line-mobile-600nw-2202149877.jpg') center/cover no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.tech-stack-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 2rem auto 5rem;
+  font-size: 1.3rem;
+  opacity: 0.92;
+  color: white;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2.5rem;
+  z-index: 2;
+}
+
+.tech-category {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.tech-category:hover {
+  transform: translateY(-20px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 20px 50px rgba(0, 123, 255, 0.2);
+  background: rgba(0, 123, 255, 0.08);
+}
+
+.tech-category h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 1.7rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tech-tags span {
+  background: rgba(0, 123, 255, 0.2);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.tech-tags span:hover {
+  background: var(--accent-blue);
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Why Technestra Section */
+.why-technestra-section {
+  position: relative;
+  padding: 40px 0;
+  background: black;
+  overflow: hidden;
+}
+
+.why-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7)),
+    url('https://thumbs.dreamstime.com/b/two-hands-engage-handshake-symbolizing-business-partnership-behind-digital-graphs-world-map-visuals-emphasize-growth-414118532.jpg') center/cover no-repeat,
+    url('https://www.shutterstock.com/image-vector/digital-teamwork-concept-together-network-260nw-2619324623.jpg') center/cover no-repeat;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.why-technestra-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.why-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0rem auto 3rem;
+  font-size: 1.3rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 3rem;
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  padding: 3.5rem 2.5rem;
+  border-radius: 24px;
+  text-align: center;
+  border: 1px solid rgba(0, 123, 255, 0.15);
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.why-card:hover {
+  transform: translateY(-20px) scale(1.03);
+  border-color: var(--accent-blue);
+  box-shadow: 0 30px 60px rgba(0, 123, 255, 0.25);
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.why-icon {
+  width: 90px;
+  height: 90px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  color: var(--accent-blue);
+  border: 2px solid rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover .why-icon {
+  background: var(--accent-blue);
+  color: var(--bg-primary);
+  transform: rotate(360deg);
+}
+
+.why-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: var(--primary);
+}
+
+.why-card p {
+  opacity: 0.88;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: white;
 }

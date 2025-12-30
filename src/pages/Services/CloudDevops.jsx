@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Brain, Zap, MessageSquare, Bot, Languages, Mic, ArrowRight, ChevronDown } from "lucide-react";
 import '../../styles/Service.css';
 
-export default function NaturalLanguageProcessing() {
+export default function CloudDevops() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const aiServices = [

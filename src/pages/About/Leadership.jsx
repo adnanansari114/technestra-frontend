@@ -59,35 +59,6 @@ export default function Leadership() {
         </div>
       </section>
 
-      {/* CEO SECTION */}
-      {/* <section className="leader-profile ceo-profile">
-        <div className="container">
-          <div className="profile-grid reverse">
-            <motion.div 
-              initial={{ opacity: 0, x: 60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="profile-info"
-            >
-              <span className="role-badge ceo">Leadership Team</span>
-              <h2 className="leader-name">Touhid Rahman</h2>
-              <p className="leader-bio">
-                Touhid Rahman is an accomplished Chief Executive Officer with a proven track record across multiple industries, including Communications, Financial Services, and Leadership Development. He is highly skilled in creating momentum for organizations and has extensive experience in establishing and scaling newly-initiated campaigns into major global operations4. He has successfully launched multiple companies into multi-million-dollar ventures and has led teams of over 30+ individuals. His initiatives have generated over $50 million in worldwide revenue.
-              </p>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="profile-image"
-            >
-              <img src="/images/ceo.jpg" alt="CEO" />
-              <div className="image-glow ceo"></div>
-            </motion.div>
-          </div>
-        </div>
-      </section> */}
       <Team />
       <ReadySection />
     </>

@@ -29,7 +29,7 @@ export default function ReadySection() {
             Our experts are standing by to understand your goals and build solutions that deliver real results.
           </p>
           <a href="/contact" className="ready-cta-btn">
-            Let's Get Started <ArrowRight className="cta-arrow" size={22} />
+            Contact Us <ArrowRight className="cta-arrow" size={22} />
           </a>
         </motion.div>
       </div>
