@@ -100,9 +100,8 @@ export default function LogoSlider() {
     <section className="logo-slider-section">
       <div class="container">
         <div className="slider-header">
-          <h2 className="top-heading">Trusted by Industry Leaders</h2>
+          <h2 className="top-heading">Technologies We Work With</h2>
           <p className="para-one" style={{ textAlign: 'center', opacity: 0.8 }}>
-            We work with the world's most innovative companies
           </p>
         </div>
 

@@ -5,7 +5,6 @@ import LogoSlider from '../components/HomeComponent/LogoSlider';
 import ContactSection from "../components/ContactComponent/ContactSection";
 import ReadySection from '../components/ReadySection';
 import ServiceComponent from '../components/ServiceComponent';
-imp
 
 export default function Home() {
   return (
